@@ -1,0 +1,16 @@
+<%-include("partials/header")-%>
+<link rel="stylesheet" href="">
+<h1>Compose</h1>
+<form action="<%=route%>" method="post">
+    <div class="form-group">
+        <label >Title</label>
+        <input type="text" class="form-control" name="myPost">
+      </div>
+      <div class="form-group">
+        <label >Post</label>
+        <textarea type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" name="myPostContent"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Publish</button>
+</form>
+
+<%-include("partials/footer")-%>
